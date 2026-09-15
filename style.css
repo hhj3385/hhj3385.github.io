@@ -12,7 +12,7 @@
   --sheet: #ffffff;
   --text: #1a1a1a;
   --muted: #666;
-  --faint: #999;
+  --faint: #737373;
   --line: #333;
   --rule: #d9d9d9;
   --chip: #f2f2f2;
@@ -75,10 +75,11 @@ b { font-weight: 700; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .name { color: #f2f2f2; } }
 .name .ko { display: block; font-size: 44px; font-weight: 800; letter-spacing: .06em; }
 .name .en { display: block; margin-top: 8px; font-size: 20px; font-weight: 500; letter-spacing: .28em; text-transform: uppercase; }
-.name .cap { color: #7a7a7a; }
+.name .cap { color: #555; }
 .photo {
   position: absolute; left: 0; right: 0; top: 150px; bottom: 0;
-  background: url("photo.jpg") center 20% / cover no-repeat;   /* photo.jpg 를 레포에 넣으면 표시됨 */
+  /* 사진을 넣으려면 photo.jpg 를 레포에 두고 아래 줄의 주석을 푼다 */
+  /* background: url("photo.jpg") center 20% / cover no-repeat; */
   -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 55%, transparent 100%);
           mask-image: linear-gradient(180deg, #000 0%, #000 55%, transparent 100%);
 }
