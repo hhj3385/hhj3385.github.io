@@ -138,6 +138,10 @@ b { font-weight: 700; }
 .caret { display: inline-block; width: 3px; height: .95em; background: var(--primary); margin-left: 3px; vertical-align: text-bottom; animation: blink .9s steps(2, start) infinite; }
 @keyframes blink { to { visibility: hidden; } }
 .lead { font-size: 17px; color: var(--muted); line-height: 1.6; margin-bottom: 28px; max-width: 760px; }
+/* 헤드라인·소개 왼쪽, 사진 오른쪽 — 사진 아랫변이 아래 카드 윗변에 닿는다 */
+.hero-top { display: flex; align-items: flex-end; gap: 32px; }
+.hero-text { flex: 1; min-width: 0; }
+.hero-photo { width: 300px; height: auto; flex-shrink: 0; margin-left: auto; align-self: flex-end; -webkit-user-drag: none; }
 
 .hero-card { background: var(--sheet); border: 1px solid var(--border); border-radius: 14px; padding: 24px; box-shadow: var(--shadow-card); }
 .pill-wrap { position: relative; }
@@ -274,6 +278,8 @@ b { font-weight: 700; }
   .gnb { gap: 2px; padding: 0 8px; } .gnb a { height: 44px; font-size: 13.5px; }
   .band-inner { padding-left: 16px; padding-right: 16px; }
   .hero { padding: 36px 0 40px; } .hero h1 { font-size: 24px; } .lead { font-size: 14px; }
+  .hero-top { flex-direction: column-reverse; align-items: flex-start; gap: 0; }
+  .hero-photo { width: 150px; margin: 0 0 14px; align-self: flex-start; }
   .hero-card { padding: 14px; }
   .pill { flex-wrap: wrap; border-radius: 16px; padding: 12px 12px; gap: 8px; }
   .pill-text { flex-basis: 100%; }
@@ -336,8 +342,13 @@ b { font-weight: 700; }
     <!-- ══ 히어로 ══ -->
     <section class="hero">
       <div class="band-inner">
-        <h1 id="headline" aria-label="데이터를 AI가 활용 가능한 자산으로 만드는 일을 합니다"></h1>
-        <p class="lead">국가 데이터 플랫폼의 현장에서 성장한 AI 엔지니어입니다. ㈜데이터누리 기업부설연구소 AI팀에서 데이터플랫폼 설계와 온프레미스 LLM 서비스 개발을 맡고 있으며, 가천대학교 산학 과정과 실무를 병행하고 있습니다.</p>
+        <div class="hero-top">
+          <div class="hero-text">
+            <h1 id="headline" aria-label="데이터를 AI가 활용 가능한 자산으로 만드는 일을 합니다"></h1>
+            <p class="lead">국가 데이터 플랫폼의 현장에서 성장한 AI 엔지니어입니다. ㈜데이터누리 기업부설연구소 AI팀에서 데이터플랫폼 설계와 온프레미스 LLM 서비스 개발을 맡고 있으며, 가천대학교 산학 과정과 실무를 병행하고 있습니다.</p>
+          </div>
+          <img class="hero-photo" src="photo.webp" alt="허호재 프로필 사진" width="600" height="600" decoding="async">
+        </div>
 
         <!-- 검색 카드 자리 → 관심 연구 카드 -->
         <div class="hero-card" id="research">
