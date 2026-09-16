@@ -4,7 +4,7 @@
 
 ## 로컬에서 수정하기
 
-1. `index.html`(내용) · `style.css`(스타일) · `script.js`(테마 토글)을 편집한다. 빌드 도구 없음. 프로필 사진은 `photo.jpg`(세로형 권장)를 같은 폴더에 두고 `style.css`의 `.photo` 안 `background: url("photo.jpg")` 줄 주석을 풀면 사이드바에 표시된다.
+1. `index.html`(내용 + 상단 `<style>` 스타일) · `script.js`(프로젝트 데이터 `PROJECTS`, 타이핑·카운트업·탭·테마)를 편집한다. 빌드 도구 없음. 스타일을 HTML 안에 둔 이유는 렌더 차단 요청을 없애기 위해서다.
 2. `index.html`을 브라우저로 열어 확인한다. (또는 `python -m http.server 8877` 후 http://localhost:8877 — 포트는 비어 있는 아무 번호나)
 3. `git add -A && git commit -m "..." && git push` → 1~2분 뒤 https://hhj3385.github.io 반영.
 
