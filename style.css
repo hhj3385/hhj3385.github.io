@@ -29,8 +29,8 @@
   --nav-text: #464c53;
   --thumb: #f3f5f9;
   --amber-bg: #fffbeb; --amber: #b45309;
-  --green-bg: #f0fdf4; --green: #16a34a;
-  --purple-bg: #f5f3ff; --purple: #7c3aed;
+  --green-bg: #f0fdf4; --green: #15803d;
+  --purple-bg: #f5f3ff; --purple: #6d28d9;
   --shadow-card: 0 8px 12px rgba(0,0,0,.04);
   --shadow-pill: 0 4px 18px rgba(15,23,42,.07);
   --shadow-hover: 0 12px 24px rgba(15,23,42,.16);
@@ -241,7 +241,7 @@ b { font-weight: 700; }
 .foot-co .ln { font-size: 13.5px; color: var(--text2); }
 .foot-co .ln a { color: var(--primary); }
 .foot-co .ln a:hover { text-decoration: underline; }
-.foot-co .cp { font-size: 13px; color: var(--muted); margin-top: 4px; }
+.foot-co .cp { font-size: 13px; color: var(--text2); margin-top: 4px; }
 
 /* ---------- responsive (768px, useIsMobile 기준) ---------- */
 @media (max-width: 1024px) {

@@ -13,8 +13,10 @@
   <link rel="canonical" href="https://hhj3385.github.io/">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%232563eb'/%3E%3Ctext x='16' y='22' font-size='17' font-family='sans-serif' font-weight='800' fill='white' text-anchor='middle'%3EH%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-gov-dynamic-subset.min.css">
   <link rel="stylesheet" href="style.css">
+  <!-- 웹폰트 CSS는 렌더를 막지 않게 비동기 로드 (시스템 고딕 폴백 → GOV 스왑) -->
+  <link rel="preload" as="style" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-gov-dynamic-subset.min.css" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-gov-dynamic-subset.min.css"></noscript>
 </head>
 <body>
 <a class="skip" href="#main">본문으로 건너뛰기</a>
@@ -32,8 +34,8 @@
       </a>
       <div class="spacer"></div>
       <div class="hdr-actions">
-        <a class="hdr-btn primary" href="mailto:hush34686@gmail.com"><i data-lucide="mail" data-size="15"></i><span>이메일</span></a>
-        <a class="hdr-btn" href="https://github.com/hhj3385" target="_blank" rel="noopener"><i data-lucide="github" data-size="15"></i><span>GitHub</span></a>
+        <a class="hdr-btn primary" href="mailto:hush34686@gmail.com" aria-label="이메일 보내기"><i data-lucide="mail" data-size="15"></i><span>이메일</span></a>
+        <a class="hdr-btn" href="https://github.com/hhj3385" target="_blank" rel="noopener" aria-label="GitHub 프로필"><i data-lucide="github" data-size="15"></i><span>GitHub</span></a>
         <button class="hdr-btn icon-only" type="button" id="themeBtn" title="라이트 / 다크 전환"><i data-lucide="sun" data-size="15" class="ico-sun"></i><i data-lucide="moon" data-size="15" class="ico-moon"></i></button>
       </div>
     </div>
