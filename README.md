@@ -1,6 +1,6 @@
 # hhj3385.github.io
 
-허호재(Hojae Huh) 개인 포트폴리오 · CV 사이트. 순수 정적 HTML/CSS + 최소 JS, GitHub Pages(main 브랜치 루트)로 배포.
+허호재(Hojae Heo) 개인 포트폴리오 · CV 사이트. 순수 정적 HTML/CSS + 최소 JS, GitHub Pages(main 브랜치 루트)로 배포.
 
 ## 로컬에서 수정하기
 
